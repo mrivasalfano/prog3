@@ -14,6 +14,9 @@ public class Visita implements Iterable<Familia>{
         this.invitados = new LinkedList<>();
     }
 
+    public boolean aceptaFamilia(Familia fam) {
+        return this.lugares - fam.getMiembros() >= 0;
+    }
 
     public int getLugares() {
         return lugares;
@@ -23,14 +26,9 @@ public class Visita implements Iterable<Familia>{
         return this.invitados.size();
     }
 
-    public boolean addFamilia(Familia fam) {
-        if (this.lugares - fam.getMiembros() >= 0) {
+    public void addFamilia(Familia fam) {
             this.invitados.add(fam);
             this.lugares -= fam.getMiembros();
-            return true;
-        }
-        else
-            return false;
     }
 
     public int getDia() {

@@ -50,11 +50,29 @@ public class Main {
 		//&& !solucion(familias) saqué eso porque la
 		//solución me decía si familia no está vacío
 		//y ya lo pregunto al principio
-		while (!familias.isEmpty() ) {
-			Familia x = seleccionar(familias);
-			familias.remove(x);
+		while (!familias.isEmpty()) {
+			Familia fam = seleccionar(familias);
+			familias.remove(fam);
 
-			factible(x, dias, bonos);
+			//itero los días de la familia como candidatos
+			Iterator<Integer> diasFamilia = fam.iterator();
+			int cont = 0;
+			boolean sigo = true;
+
+			while (diasFamilia.hasNext() && sigo) {
+				int numDia = diasFamilia.next();
+				Visita dia = dias.get(numDia-1);
+
+				if (factible(fam, dia)) {
+					dia.addFamilia(fam);
+					sigo = false;
+				}
+
+				cont++;
+			}
+
+			if (cont > 1)
+				bonos[0] += (25 + (10 * fam.getMiembros()) + (5 * cont));
 		}
 
 		//como edito los objetos días que paso por parámetro
@@ -65,32 +83,8 @@ public class Main {
 //			return new LinkedList<Visita>();
 	}
 
-	private static void factible(Familia x, ArrayList<Visita> dias, int[] bonos) {
-		Visita diaPreferido = dias.get(x.diaPreferido()-1);
-		int cantMiembros = x.getMiembros();
-
-		//intento agregar la familia a su dia preferido.
-		//En caso de no poder me responde false entonces
-		//pruebo con los demás
-		if (!diaPreferido.addFamilia(x)) {
-			Iterator<Integer> diasPreferidos = x.iterator();
-			diasPreferidos.next();
-
-			boolean sigo = true;
-			int cont = 0;
-
-			while(diasPreferidos.hasNext() && sigo) {
-				int dia = diasPreferidos.next();
-				Visita v = dias.get(dia-1);
-
-				if (v.addFamilia(x))
-					sigo = false;
-
-				cont++;
-			}
-
-			bonos[0] += (25 + (10 * cantMiembros) + (5 * cont));
-		}
+	private static boolean factible(Familia fam, Visita dia) {
+		return dia.aceptaFamilia(fam);
 	}
 
 	private static Familia seleccionar(LinkedList<Familia> familias) {
