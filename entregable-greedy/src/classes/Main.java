@@ -19,6 +19,7 @@ public class Main {
 		}
 
 		int bonos = asignarFamilias(familias, dias);
+
 		int cont = 0;
 
 		for (Visita v : dias) {
@@ -31,7 +32,7 @@ public class Main {
 			while (it.hasNext()) {
 				Familia f = it.next();
 
-				System.out.println("   Familia: " + f.getId() + " | Miembros: " + f.getMiembros() + " | Lugares restantes: " + (lugares-=f.getMiembros()));
+				System.out.println("   Familia: " + f.getId() + " | Día preferido: " + f.diaPreferido() + " | Miembros: " + f.getMiembros() + " | Lugares restantes del día: " + (lugares-=f.getMiembros()));
 			}
 		}
 
@@ -68,6 +69,66 @@ public class Main {
 				bonos += (25 + (10 * fam.getMiembros()) + (5 * (cont-1)));
 		}
 
+		mejorarAsignacion(dias);
+
 		return bonos;
+	}
+
+	public static void mejorarAsignacion(ArrayList<Visita> dias) {
+		//por cada día
+		for (Visita visita : dias) {
+			//recorro sus familias
+			Iterator<Familia> familias = visita.iterator();
+
+			while (familias.hasNext()) {
+				Familia fam = familias.next();
+
+				//si el día es distinto al día preferido que deseaba
+				if (fam.diaPreferido() != visita.getDia()) {
+					//busco el día preferido
+					Visita diaPreferido = dias.get(fam.diaPreferido()-1);
+
+					//veo con qué familia podría
+					//cambiarla la cual su día preferido tampoco sea
+					//en el que está
+					Iterator<Familia> familias2 = diaPreferido.iterator();
+
+					boolean sigo = true;
+
+					while (familias2.hasNext() && sigo) {
+						Familia fam2 = familias2.next();
+
+						//si el dia preferido de esta familia es igual
+						//al dia en el que estaba la familia original
+						//hago un intercambio siempre que quepan
+						//en los lugares. O también
+						//si la familia 2 está en un día
+						//que tampoco es su preferido
+						//puedo intercambiarla ya que
+						//no me afecta tanto y la familia 1
+						//va a ir a su dia preferido
+						if (fam2.diaPreferido() != diaPreferido.getDia() && fam2.indiceDePreferencia(visita.getDia()) != -1) {
+							if (
+									((diaPreferido.getLugares() - fam2.getMiembros() + fam.getMiembros()) >= 0) &&
+									((visita.getLugares() - fam.getMiembros() + fam2.getMiembros()) >= 0)
+							) {
+								//remuevo la familia original
+								familias.remove();
+								//remuevo la familia a intercambiar
+								familias2.remove();
+								//agrego la familia a intercambiar
+								//al dia en el que esta la original
+								visita.addFamilia(fam2);
+								//agrego la familia original a su
+								//dia preferido
+								diaPreferido.addFamilia(fam);
+
+								sigo = false;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
