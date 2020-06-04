@@ -26,6 +26,7 @@ public class Visita implements Iterable<Familia>{
     public boolean addFamilia(Familia fam) {
         if (this.lugares - fam.getMiembros() >= 0) {
             this.invitados.add(fam);
+            this.lugares -= fam.getMiembros();
             return true;
         }
         else
