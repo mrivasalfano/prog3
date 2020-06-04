@@ -18,10 +18,6 @@ public class Visita implements Iterable<Familia>{
         return this.lugares - fam.getMiembros() >= 0;
     }
 
-    public int getLugares() {
-        return lugares;
-    }
-
     public int cantFamilias() {
         return this.invitados.size();
     }

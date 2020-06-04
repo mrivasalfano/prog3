@@ -18,9 +18,7 @@ public class Main {
 			dias.add(new Visita(i, 340));
 		}
 
-		int bonos[] = {0};
-
-		asignarFamilias(familias, dias, bonos);
+		int bonos = asignarFamilias(familias, dias);
 		int cont = 0;
 
 		for (Visita v : dias) {
@@ -38,21 +36,16 @@ public class Main {
 		}
 
 		System.out.println("Cantidad total de familias asignadas: " + cont);
-		System.out.println("Cantidad a pagar por bonos compensatorios: " + bonos[0]);
+		System.out.println("Cantidad a pagar por bonos compensatorios: " + bonos);
 	}
 
-	public static void asignarFamilias(LinkedList<Familia> familias, ArrayList<Visita> dias, int[] bonos) {
-//		LinkedList<Visita> seleccionados = new LinkedList<>();
-
+	public static int asignarFamilias(LinkedList<Familia> familias, ArrayList<Visita> dias) {
+		int bonos = 0;
 		Collections.sort(familias);
-//		Collections.reverse(familias);
 
-		//&& !solucion(familias) saqué eso porque la
-		//solución me decía si familia no está vacío
-		//y ya lo pregunto al principio
 		while (!familias.isEmpty()) {
-			Familia fam = seleccionar(familias);
-			familias.remove(fam);
+			Familia fam = familias.getFirst();
+			familias.remove(0);
 
 			//itero los días de la familia como candidatos
 			Iterator<Integer> diasFamilia = fam.iterator();
@@ -63,7 +56,7 @@ public class Main {
 				int numDia = diasFamilia.next();
 				Visita dia = dias.get(numDia-1);
 
-				if (factible(fam, dia)) {
+				if (dia.aceptaFamilia(fam)) {
 					dia.addFamilia(fam);
 					sigo = false;
 				}
@@ -72,26 +65,9 @@ public class Main {
 			}
 
 			if (cont > 1)
-				bonos[0] += (25 + (10 * fam.getMiembros()) + (5 * cont));
+				bonos += (25 + (10 * fam.getMiembros()) + (5 * (cont-1)));
 		}
 
-		//como edito los objetos días que paso por parámetro
-		//no necesito devolver nada por ahora
-//		if (solucion(familias))
-//			return seleccionados;
-//		else
-//			return new LinkedList<Visita>();
-	}
-
-	private static boolean factible(Familia fam, Visita dia) {
-		return dia.aceptaFamilia(fam);
-	}
-
-	private static Familia seleccionar(LinkedList<Familia> familias) {
-		return familias.getFirst();
-	}
-
-	private static boolean solucion(LinkedList<Familia> familias) {
-		return familias.isEmpty();
+		return bonos;
 	}
 }
