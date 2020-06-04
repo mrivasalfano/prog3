@@ -9,12 +9,22 @@ public class Familia implements Comparable<Familia>, Iterable<Integer>{
 
 	private int id;
 	private int miembros;
+	private int bono;
 	private int[] diasPreferidos;
 	
 	public Familia(int id, int miembros, int... diasPreferidos) {
 		this.id = id;
+		this.bono = 0;
 		this.miembros = miembros;
 		this.diasPreferidos = diasPreferidos;
+	}
+
+	public void setBono(int cant) {
+		this.bono = cant;
+	}
+
+	public int getBono() {
+		return bono;
 	}
 
 	/* Id de la familia */

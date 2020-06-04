@@ -65,23 +65,26 @@ public class Main {
 				cont++;
 			}
 
-			if (cont > 1)
-				bonos += (25 + (10 * fam.getMiembros()) + (5 * (cont-1)));
+			if (cont > 1) {
+				int formula = (25 + (10 * fam.getMiembros()) + (5 * (cont-1)));
+				bonos += formula;
+				fam.setBono(formula);
+			}
 		}
 
-		mejorarAsignacion(dias);
+		int bonoMejorado = mejorarAsignacion(dias, bonos);
 
-		return bonos;
+		return bonoMejorado;
 	}
 
-	public static void mejorarAsignacion(ArrayList<Visita> dias) {
+	public static int mejorarAsignacion(ArrayList<Visita> dias, int bonos) {
 		//por cada día
 		for (Visita visita : dias) {
 			//recorro sus familias
-			Iterator<Familia> familias = visita.iterator();
+			int index = 0;
 
-			while (familias.hasNext()) {
-				Familia fam = familias.next();
+			while (index < visita.cantFamilias()) {
+				Familia fam = visita.getFamilia(index);
 
 				//si el día es distinto al día preferido que deseaba
 				if (fam.diaPreferido() != visita.getDia()) {
@@ -108,12 +111,15 @@ public class Main {
 						//no me afecta tanto y la familia 1
 						//va a ir a su dia preferido
 						if (fam2.diaPreferido() != diaPreferido.getDia() && fam2.indiceDePreferencia(visita.getDia()) != -1) {
+							int nuevoBono = calcularBono(fam2, visita.getDia());
+
 							if (
 									((diaPreferido.getLugares() - fam2.getMiembros() + fam.getMiembros()) >= 0) &&
-									((visita.getLugares() - fam.getMiembros() + fam2.getMiembros()) >= 0)
+									((visita.getLugares() - fam.getMiembros() + fam2.getMiembros()) >= 0) &&
+									(fam.getBono() + fam2.getBono()) > (nuevoBono)
 							) {
 								//remuevo la familia original
-								familias.remove();
+								visita.removeFamilia(index);
 								//remuevo la familia a intercambiar
 								familias2.remove();
 								//agrego la familia a intercambiar
@@ -122,13 +128,25 @@ public class Main {
 								//agrego la familia original a su
 								//dia preferido
 								diaPreferido.addFamilia(fam);
-
+								bonos -= fam.getBono();
+								bonos -= fam2.getBono();
+								bonos += nuevoBono;
+								fam.setBono(0);
+								fam2.setBono(nuevoBono);
 								sigo = false;
 							}
 						}
 					}
 				}
+
+				index++;
 			}
 		}
+
+		return bonos;
+	}
+
+	private static int calcularBono(Familia fam, int dia) {
+		return (25 + (10 * fam.getMiembros()) + (5 * fam.indiceDePreferencia(dia)));
 	}
 }
