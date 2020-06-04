@@ -76,6 +76,7 @@ public class Main {
 			Iterator<Integer> diasPreferidos = x.iterator();
 			diasPreferidos.next();
 
+
 			boolean sigo = true;
 			int cont = 0;
 
