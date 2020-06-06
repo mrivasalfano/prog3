@@ -77,7 +77,7 @@ public class Main {
 		return bonoMejorado;
 	}
 
-	public static int mejorarAsignacion(ArrayList<Visita> dias, int bonos) {
+	private static int mejorarAsignacion(ArrayList<Visita> dias, int bonos) {
 		//por cada día
 		for (Visita visita : dias) {
 			//recorro sus familias
