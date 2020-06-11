@@ -19,7 +19,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a94c1460-2086-4a94-bdd0-bc16867aaadc" name="Default Changelist" comment="" />
+    <list default="true" id="a94c1460-2086-4a94-bdd0-bc16867aaadc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/listas-arboles/listas-arboles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/listas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/DoubleLinkedNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/MyDoubleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/MyListIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/MySimpleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/Timer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/classes/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/ejEntregable/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/ejEntregable2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/tp1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/out/production/listas/tp2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/DoubleLinkedNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/MyDoubleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/MyListIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/MySimpleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/MyStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/Timer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/Tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/classes/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/ejEntregable/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/ejEntregable2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/tp1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/src/tp2/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,13 +71,51 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/entregable-greedy" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ej2.Main" />
+      <module name="backtraking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ej2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp3.Main" />
+      <module name="grafos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tp3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -70,17 +143,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl" timestamp="1591884089398">
+    <state x="166" y="0" key="#Project_Structure" timestamp="1591884743484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591884089398" />
+    <state x="166" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1591884743484" />
+    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl" timestamp="1591884406140">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591884406140" />
     <state x="172" y="0" key="SettingsEditor" timestamp="1591882894999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="172" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591882894999" />
-    <state x="10" y="0" key="new project wizard" timestamp="1591884096975">
+    <state x="10" y="0" key="new project wizard" timestamp="1591884730298">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="10" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1591884096975" />
+    <state x="10" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1591884730298" />
   </component>
 </project>
