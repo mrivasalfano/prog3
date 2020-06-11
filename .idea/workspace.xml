@@ -19,100 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a94c1460-2086-4a94-bdd0-bc16867aaadc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtracking/src/ej2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backtracking/src/ej2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/data/familias.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/entregable-greedy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/out/production/entregable-greedy/classes/CSVReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/out/production/entregable-greedy/classes/Familia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/out/production/entregable-greedy/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/out/production/entregable-greedy/classes/Visita.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/src/classes/CSVReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/src/classes/Familia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/src/classes/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entregable-greedy/src/classes/Visita.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/grafos.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/out/production/grafos/classes/Arco.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/out/production/grafos/classes/GrafoDirigido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/out/production/grafos/classes/GrafoNoDirigido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/out/production/grafos/classes/Tarea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/out/production/grafos/classes/Vertice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/out/production/grafos/tp3/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/src/classes/Arco.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/src/classes/GrafoDirigido.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/src/classes/GrafoNoDirigido.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/src/classes/Tarea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/src/classes/Vertice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafos/src/tp3/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/greedy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej2/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej2/Objeto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej3/Activity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej3/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej4/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej4/classes/Arco.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej4/classes/GrafoDirigido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/out/production/greedy/ej4/classes/Vertice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej2/Objeto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej3/Activity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej3/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej4/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej4/classes/Arco.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej4/classes/GrafoDirigido.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy/src/ej4/classes/Vertice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/listas.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prog3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/META-INF/ej-1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/MyListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/MySimpleLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/MyStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/out/production/ej-1/Timer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/DoubleLinkedNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/MyDoubleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/MyListIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/MySimpleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/MyStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/Timer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/Tree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/classes/TreeNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/ejEntregable/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/ejEntregable2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/tp1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/src/tp2/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="a94c1460-2086-4a94-bdd0-bc16867aaadc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Intellij" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
@@ -160,19 +67,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl" timestamp="1591882909339">
+    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl" timestamp="1591884089398">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591882909339" />
+    <state x="466" y="122" width="434" height="488" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591884089398" />
     <state x="172" y="0" key="SettingsEditor" timestamp="1591882894999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="172" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591882894999" />
-    <state x="10" y="0" key="new project wizard" timestamp="1591279010774">
+    <state x="10" y="0" key="new project wizard" timestamp="1591884096975">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="10" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1591279010774" />
+    <state x="10" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1591884096975" />
   </component>
 </project>
