@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         //contenedor de tareas
         HashMap<Integer, Tarea> tareas = new HashMap<>();
-
+        
         //tareas
         Tarea t0 = new Tarea("Tarea 0", "inicio", 0);
         Tarea t1 = new Tarea("Tarea 1", "Lavar",4);
