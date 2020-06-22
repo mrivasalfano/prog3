@@ -48,4 +48,8 @@ public class Familia{
     public String toString() {
         return "Familia: id=" + id + ", miembros=" + miembros + ", preferencias=" + Arrays.toString(diasPreferidos);
     }
+
+    public int cantDias() {
+        return this.diasPreferidos.length;
+    }
 }
