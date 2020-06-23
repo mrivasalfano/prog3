@@ -58,21 +58,25 @@ public class Backtracking {
                 int indexDia = fam.preferenciaEn(i);
                 Visita dia = this.dias.get(indexDia-1);
 
-                //si puedo agregar la familia al día
-                if(dia.addFamilia(fam)) {
-                    //calculo el bono siempre y cuando no vaya a su día preferido
-                    int calcBono = 0;
+                //calculo el bono siempre y cuando no vaya a su día preferido
+                int calcBono = 0;
 
-                    if(fam.diaPreferido() != indexDia) {
-                        calcBono = 25 + (10 * fam.miembros()) + (5 * (i+1));
-                        this.bonoActual += calcBono;
-                    }
+                if(fam.diaPreferido() != indexDia) {
+                    calcBono = 25 + (10 * fam.miembros()) + (5 * (i+1));
+                    this.bonoActual += calcBono;
+                }
+
+                //si el bono actual no es mayor al mejor bono
+                //y si puedo agregar la familia al día
+                if(!(this.bonoActual > this.mejorBono) && dia.addFamilia(fam)) {
+
 
                     this.getVisitas(famIndex+1);
 
                     dia.removeFamilia();
-                    this.bonoActual -= calcBono;
                 }
+
+                this.bonoActual -= calcBono;
             }
         }
     }
