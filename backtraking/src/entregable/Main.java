@@ -3,6 +3,7 @@ package entregable;
 import entregable.Backtracking;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Main {
@@ -12,8 +13,9 @@ public class Main {
         ArrayList<Familia> familias = reader.read();
         ArrayList<Visita> dias = new ArrayList<>();
         int lugares = 30;
+        int cantDias = 10;
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= cantDias; i++) {
             dias.add(new Visita(i, lugares));
         }
 
@@ -21,11 +23,20 @@ public class Main {
         ArrayList<Visita> visitas = backtracking.getVisitas();
 
         for(Visita vis : visitas) {
-            System.out.println("Día: " + vis.getDia() );
+            System.out.println("--- Día: " + vis.getDia() + " | Lugares restantes: " + vis.getLugares() + " ---");
+
+            Iterator<Familia> itFamilias = vis.iterator();
+
+            while(itFamilias.hasNext()) {
+                Familia fam = itFamilias.next();
+
+                System.out.println("   " + fam);
+            }
         }
 
-        System.out.println(backtracking.getBono());
-        System.out.println(backtracking.getEstados());
+        System.out.println("------------------------------------------------");
+        System.out.println("Bono compensatorio: " + backtracking.getBono());
+        System.out.println("Cantidad de estados: " + backtracking.getEstados());
 
 //        CSVReader reader2 = new CSVReader("./data/familias-2.csv");
 //

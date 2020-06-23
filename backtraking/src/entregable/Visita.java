@@ -1,8 +1,9 @@
 package entregable;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
-public class Visita {
+public class Visita implements Iterable<Familia>{
     private int dia;
     private int lugares;
     private LinkedList<Familia> familias;
@@ -44,5 +45,10 @@ public class Visita {
     public void removeFamilia() {
         this.lugares += this.familias.getLast().miembros();
         this.familias.removeLast();
+    }
+
+    @Override
+    public Iterator<Familia> iterator() {
+        return this.familias.iterator();
     }
 }

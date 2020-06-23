@@ -1,14 +1,13 @@
 package entregable;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class Backtracking {
     private ArrayList<Visita> dias;
     private ArrayList<Visita> diasOptimos;
     private ArrayList<Familia> familias;
     private int mejorBono;
-    private int bono;
+    private int bonoActual;
     private int estados;
 
     public Backtracking(ArrayList<Visita> dias, ArrayList<Familia> familias) {
@@ -16,7 +15,7 @@ public class Backtracking {
         this.diasOptimos = new ArrayList<>();
         this.dias = dias;
         this.mejorBono = Integer.MAX_VALUE;
-        this.bono = 0;
+        this.bonoActual = 0;
         this.estados = 0;
     }
 
@@ -47,8 +46,8 @@ public class Backtracking {
         
         //si mi indice se pasa es que ya probé con todas las familias
         if(famIndex == this.familias.size()) {
-            if(this.bono < this.mejorBono) {
-                this.mejorBono = this.bono;
+            if(this.bonoActual < this.mejorBono) {
+                this.mejorBono = this.bonoActual;
                 this.copiarArreglo();
             }
         }
@@ -66,15 +65,14 @@ public class Backtracking {
 
                     if(fam.diaPreferido() != indexDia) {
                         calcBono = 25 + (10 * fam.miembros()) + (5 * (i+1));
-                        this.bono += calcBono;
+                        this.bonoActual += calcBono;
                     }
 
                     this.getVisitas(famIndex+1);
 
                     dia.removeFamilia();
-                    this.bono -= calcBono;
+                    this.bonoActual -= calcBono;
                 }
-
             }
         }
     }
