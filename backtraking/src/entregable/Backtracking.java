@@ -46,10 +46,11 @@ public class Backtracking {
         
         //si mi indice se pasa es que ya probé con todas las familias
         if(famIndex == this.familias.size()) {
-            if(this.bonoActual < this.mejorBono) {
+            //al realizar la poda, cuando llegamos a un estado final
+            //siempre va a ser solución, o sea mejor que la decisión anterior
+            //if(this.bonoActual < this.mejorBono) {
                 this.mejorBono = this.bonoActual;
                 this.copiarArreglo();
-            }
         }
         else {
             Familia fam = familias.get(famIndex);
